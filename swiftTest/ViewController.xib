@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="16096" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="16087"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="ViewController" customModule="swiftTest" customModuleProvider="target">
+            <connections>
+                <outlet property="clickBtn" destination="GiB-Oy-m5b" id="dX1-nW-Twu"/>
+                <outlet property="countLabel" destination="4Za-oC-HKx" id="RPI-qd-2aR"/>
+                <outlet property="presentBtn" destination="nOr-EI-Zrc" id="NXW-0A-0YU"/>
+                <outlet property="pushBtn" destination="tIW-Fd-3Yb" id="4XN-xO-NxT"/>
+                <outlet property="view" destination="iN0-l3-epB" id="0gM-ai-3cf"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB">
+            <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="tIW-Fd-3Yb">
+                    <rect key="frame" x="0.0" y="144" width="138" height="30"/>
+                    <state key="normal" title="push"/>
+                    <connections>
+                        <action selector="pushAction:" destination="-1" eventType="touchUpInside" id="eK6-IR-zIa"/>
+                    </connections>
+                </button>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="nOr-EI-Zrc">
+                    <rect key="frame" x="138" y="144" width="138" height="30"/>
+                    <state key="normal" title="present"/>
+                    <connections>
+                        <action selector="presentAction:" destination="-1" eventType="touchUpInside" id="qkN-By-9rT"/>
+                    </connections>
+                </button>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="GiB-Oy-m5b">
+                    <rect key="frame" x="276" y="144" width="138" height="30"/>
+                    <state key="normal" title="click"/>
+                    <connections>
+                        <action selector="clickAction:" destination="-1" eventType="touchUpInside" id="21C-Sh-4Bv"/>
+                    </connections>
+                </button>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="4Za-oC-HKx">
+                    <rect key="frame" x="186" y="224" width="42" height="21"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                    <nil key="textColor"/>
+                    <nil key="highlightedColor"/>
+                </label>
+            </subviews>
+            <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+            <constraints>
+                <constraint firstItem="GiB-Oy-m5b" firstAttribute="leading" secondItem="nOr-EI-Zrc" secondAttribute="trailing" id="0ph-wt-SJg"/>
+                <constraint firstItem="vUN-kp-3ea" firstAttribute="leading" secondItem="tIW-Fd-3Yb" secondAttribute="leading" id="3rX-rg-epB"/>
+                <constraint firstItem="tIW-Fd-3Yb" firstAttribute="centerY" secondItem="nOr-EI-Zrc" secondAttribute="centerY" id="NIo-zw-M1M"/>
+                <constraint firstItem="nOr-EI-Zrc" firstAttribute="leading" secondItem="tIW-Fd-3Yb" secondAttribute="trailing" id="UUX-La-0HI"/>
+                <constraint firstItem="4Za-oC-HKx" firstAttribute="top" secondItem="nOr-EI-Zrc" secondAttribute="bottom" constant="50" id="Ymj-7X-Yds"/>
+                <constraint firstItem="tIW-Fd-3Yb" firstAttribute="width" secondItem="nOr-EI-Zrc" secondAttribute="width" id="bCd-Tq-skY"/>
+                <constraint firstItem="4Za-oC-HKx" firstAttribute="centerX" secondItem="nOr-EI-Zrc" secondAttribute="centerX" id="iDj-YQ-akf"/>
+                <constraint firstItem="nOr-EI-Zrc" firstAttribute="centerX" secondItem="vUN-kp-3ea" secondAttribute="centerX" id="iWZ-Dd-r2X"/>
+                <constraint firstItem="nOr-EI-Zrc" firstAttribute="top" secondItem="vUN-kp-3ea" secondAttribute="top" constant="100" id="oW0-la-hwW"/>
+                <constraint firstItem="GiB-Oy-m5b" firstAttribute="trailing" secondItem="vUN-kp-3ea" secondAttribute="trailing" id="uSF-B7-1nF"/>
+                <constraint firstItem="GiB-Oy-m5b" firstAttribute="centerY" secondItem="nOr-EI-Zrc" secondAttribute="centerY" id="vnN-FE-Wau"/>
+                <constraint firstItem="nOr-EI-Zrc" firstAttribute="width" secondItem="GiB-Oy-m5b" secondAttribute="width" id="zM7-5p-KCK"/>
+            </constraints>
+            <viewLayoutGuide key="safeArea" id="vUN-kp-3ea"/>
+            <point key="canvasLocation" x="-200" y="79"/>
+        </view>
+    </objects>
+</document>
