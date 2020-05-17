@@ -28,6 +28,13 @@ class ViewController: UIViewController {
         title = "Home"
         
         count = 0
+        
+        let com = add(5) >>> mut(10) >>> div(3) >>> sub(2)
+        
+        print(com(12))
+        
+        print(add2(10)(20)(30))
+        
     }
 
 
@@ -50,5 +57,30 @@ class ViewController: UIViewController {
     @IBAction func clickAction(_ sender: Any) {
         count += 1
     }
+    
+    func add(_ num: Int) -> (Int) -> Int { {$0 + num} }
+    func sub(_ num: Int) -> (Int) -> Int { {$0 - num} }
+    func mut(_ num: Int) -> (Int) -> Int { {$0 * num} }
+    func div(_ num: Int) -> (Int) -> Int { {$0 / num} }
+    
+    
+    func add1(_ v1: Int, _ v2: Int, _ v3: Int) -> Int {
+        v1 + v2 + v3
+    }
+    
+    func add2(_ v1: Int) -> ((Int) -> (Int) -> Int) {
+        return { a in
+            return { b in
+                return v1 + b + a
+            }
+        }
+    }
+    
 }
 
+infix operator >>> : AdditionPrecedence
+func >>><A, B, C>(_ f1: @escaping (A) -> B, _ f2: @escaping (B) -> C) -> (A) -> C {
+    return {
+        f2(f1($0))
+    }
+}
