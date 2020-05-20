@@ -7,6 +7,7 @@
 //
 
 import UIKit
+import SnapKit
 
 class PushViewController: UIViewController {
     
@@ -14,6 +15,7 @@ class PushViewController: UIViewController {
     var didAdd: ((Int) -> Void)?
     var didSub: ((Int) -> ())?
     
+    let textField = UITextField()
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -67,6 +69,16 @@ class PushViewController: UIViewController {
         subBtn3.setTitleColor(.black, for: .normal)
         subBtn3.addTarget(self, action: #selector(subBtn3Action), for: .touchUpInside)
         view.addSubview(subBtn3)
+        
+        textField.placeholder = "输入用户名"
+        textField.borderStyle = .roundedRect
+        view.addSubview(textField)
+        textField.snp_makeConstraints { (make) in
+            make.left.equalTo(10)
+            make.top.equalTo(subBtn3.snp_bottom)
+            make.width.equalTo(200)
+            make.height.equalTo(40)
+        }
     }
     
     //MARK: - Selector
@@ -102,5 +114,9 @@ class PushViewController: UIViewController {
             didSub!(num)
         }
         navigationController?.popViewController(animated: true)
+    }
+    
+    override func touchesBegan(_ touches: Set<UITouch>, with event: UIEvent?) {
+        textField.resignFirstResponder()
     }
 }
