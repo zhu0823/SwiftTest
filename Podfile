@@ -10,8 +10,12 @@ target 'swiftTest' do
 
   # Pods for swiftTest
 
-  pod 'AFNetworking'
+  pod 'RxSwift'
+  pod 'RxCocoa'
   pod 'SnapKit'
+  pod 'SwiftyJSON'
+  pod 'Alamofire'
+  pod 'Kingfisher'
 
 =begin
   target 'swiftTestTests' do
