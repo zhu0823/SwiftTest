@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="16096" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="16097" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
     <device id="retina6_1" orientation="portrait" appearance="light"/>
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="16087"/>
@@ -48,6 +48,13 @@
                     <nil key="textColor"/>
                     <nil key="highlightedColor"/>
                 </label>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="V5G-5W-PZq">
+                    <rect key="frame" x="190" y="743" width="34" height="30"/>
+                    <state key="normal" title="login"/>
+                    <connections>
+                        <action selector="loginAction:" destination="-1" eventType="touchUpInside" id="XTc-ti-oyo"/>
+                    </connections>
+                </button>
             </subviews>
             <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
             <constraints>
@@ -60,12 +67,14 @@
                 <constraint firstItem="4Za-oC-HKx" firstAttribute="centerX" secondItem="nOr-EI-Zrc" secondAttribute="centerX" id="iDj-YQ-akf"/>
                 <constraint firstItem="nOr-EI-Zrc" firstAttribute="centerX" secondItem="vUN-kp-3ea" secondAttribute="centerX" id="iWZ-Dd-r2X"/>
                 <constraint firstItem="nOr-EI-Zrc" firstAttribute="top" secondItem="vUN-kp-3ea" secondAttribute="top" constant="100" id="oW0-la-hwW"/>
+                <constraint firstItem="V5G-5W-PZq" firstAttribute="centerX" secondItem="vUN-kp-3ea" secondAttribute="centerX" id="spl-hP-67q"/>
                 <constraint firstItem="GiB-Oy-m5b" firstAttribute="trailing" secondItem="vUN-kp-3ea" secondAttribute="trailing" id="uSF-B7-1nF"/>
                 <constraint firstItem="GiB-Oy-m5b" firstAttribute="centerY" secondItem="nOr-EI-Zrc" secondAttribute="centerY" id="vnN-FE-Wau"/>
+                <constraint firstItem="vUN-kp-3ea" firstAttribute="bottom" secondItem="V5G-5W-PZq" secondAttribute="bottom" constant="89" id="wPG-Md-eQk"/>
                 <constraint firstItem="nOr-EI-Zrc" firstAttribute="width" secondItem="GiB-Oy-m5b" secondAttribute="width" id="zM7-5p-KCK"/>
             </constraints>
             <viewLayoutGuide key="safeArea" id="vUN-kp-3ea"/>
-            <point key="canvasLocation" x="-183" y="107"/>
+            <point key="canvasLocation" x="-184.05797101449278" y="106.47321428571428"/>
         </view>
     </objects>
 </document>

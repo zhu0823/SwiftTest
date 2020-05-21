@@ -37,7 +37,10 @@ class ViewController: UIViewController {
         
     }
 
-
+    @IBAction func loginAction(_ sender: Any) {
+        navigationController?.pushViewController(LoginViewController(), animated: true)
+    }
+    
     @IBAction func pushAction(_ sender: Any) {
         
         weak var wSelf = self

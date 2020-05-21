@@ -16,6 +16,8 @@
 		0A400E3A24703DBD00A3F846 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0A400E3824703DBD00A3F846 /* LaunchScreen.storyboard */; };
 		0A400E4524703DBD00A3F846 /* swiftTestTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A400E4424703DBD00A3F846 /* swiftTestTests.swift */; };
 		0A400E5024703DBD00A3F846 /* swiftTestUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A400E4F24703DBD00A3F846 /* swiftTestUITests.swift */; };
+		0A579A4B24760D4000475FFE /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A579A4A24760D4000475FFE /* LoginViewController.swift */; };
+		0A87396C247689C600DD10CF /* ObjectUnicode.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A87396B247689C600DD10CF /* ObjectUnicode.swift */; };
 		0ACEBE822470483000FAFD94 /* PushViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0ACEBE812470483000FAFD94 /* PushViewController.swift */; };
 		0ACEBE842470483E00FAFD94 /* PresentViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0ACEBE832470483E00FAFD94 /* PresentViewController.swift */; };
 		0ACEBE8624704C3500FAFD94 /* ViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 0ACEBE8524704C3500FAFD94 /* ViewController.xib */; };
@@ -54,6 +56,9 @@
 		0A400E4B24703DBD00A3F846 /* swiftTestUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = swiftTestUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		0A400E4F24703DBD00A3F846 /* swiftTestUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = swiftTestUITests.swift; sourceTree = "<group>"; };
 		0A400E5124703DBD00A3F846 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		0A579A4A24760D4000475FFE /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
+		0A579A4C24760D5800475FFE /* swiftTest-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "swiftTest-Bridging-Header.h"; sourceTree = "<group>"; };
+		0A87396B247689C600DD10CF /* ObjectUnicode.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ObjectUnicode.swift; sourceTree = "<group>"; };
 		0ACEBE812470483000FAFD94 /* PushViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PushViewController.swift; sourceTree = "<group>"; };
 		0ACEBE832470483E00FAFD94 /* PresentViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PresentViewController.swift; sourceTree = "<group>"; };
 		0ACEBE8524704C3500FAFD94 /* ViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ViewController.xib; sourceTree = "<group>"; };
@@ -121,10 +126,13 @@
 				0ACEBE812470483000FAFD94 /* PushViewController.swift */,
 				0ACEBE832470483E00FAFD94 /* PresentViewController.swift */,
 				0ACEBE872470705D00FAFD94 /* ChangeProtocol.swift */,
+				0A579A4A24760D4000475FFE /* LoginViewController.swift */,
+				0A87396B247689C600DD10CF /* ObjectUnicode.swift */,
 				0A400E3324703DBC00A3F846 /* Main.storyboard */,
 				0A400E3624703DBD00A3F846 /* Assets.xcassets */,
 				0A400E3824703DBD00A3F846 /* LaunchScreen.storyboard */,
 				0A400E3B24703DBD00A3F846 /* Info.plist */,
+				0A579A4C24760D5800475FFE /* swiftTest-Bridging-Header.h */,
 			);
 			path = swiftTest;
 			sourceTree = "<group>";
@@ -234,6 +242,7 @@
 				TargetAttributes = {
 					0A400E2924703DBC00A3F846 = {
 						CreatedOnToolsVersion = 11.4.1;
+						LastSwiftMigration = 1140;
 					};
 					0A400E3F24703DBD00A3F846 = {
 						CreatedOnToolsVersion = 11.4.1;
@@ -340,9 +349,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				0A579A4B24760D4000475FFE /* LoginViewController.swift in Sources */,
 				0A400E3224703DBC00A3F846 /* ViewController.swift in Sources */,
 				0A400E2E24703DBC00A3F846 /* AppDelegate.swift in Sources */,
 				0ACEBE842470483E00FAFD94 /* PresentViewController.swift in Sources */,
+				0A87396C247689C600DD10CF /* ObjectUnicode.swift in Sources */,
 				0ACEBE822470483000FAFD94 /* PushViewController.swift in Sources */,
 				0A400E3024703DBC00A3F846 /* SceneDelegate.swift in Sources */,
 				0ACEBE882470705D00FAFD94 /* ChangeProtocol.swift in Sources */,
@@ -519,6 +530,7 @@
 			baseConfigurationReference = 4365673E5DDF7649B079E687 /* Pods-swiftTest.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				CODE_SIGN_STYLE = Manual;
 				DEVELOPMENT_TEAM = ZJTN8M3KZB;
@@ -530,6 +542,8 @@
 				PRODUCT_BUNDLE_IDENTIFIER = com.goodick.swiftTest;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE_SPECIFIER = "SwiftTest Dev";
+				SWIFT_OBJC_BRIDGING_HEADER = "swiftTest/swiftTest-Bridging-Header.h";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -540,6 +554,7 @@
 			baseConfigurationReference = 135625F8E586310757DA1CD6 /* Pods-swiftTest.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_IDENTITY = "iPhone Distribution";
 				CODE_SIGN_STYLE = Manual;
 				DEVELOPMENT_TEAM = ZJTN8M3KZB;
@@ -551,6 +566,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = com.goodick.swiftTest;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE_SPECIFIER = "SwiftTest ADHoc";
+				SWIFT_OBJC_BRIDGING_HEADER = "swiftTest/swiftTest-Bridging-Header.h";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
