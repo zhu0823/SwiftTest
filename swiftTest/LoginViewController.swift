@@ -78,7 +78,7 @@ extension LoginViewController {
                 
                 let respDic = respJson as! Dictionary<String, Any>
                 
-                print(respDic)
+                print(respDic.unicodeDescription)
             }catch {
                 print(error)
             }
