@@ -13,6 +13,7 @@
                 <outlet property="countLabel" destination="4Za-oC-HKx" id="RPI-qd-2aR"/>
                 <outlet property="presentBtn" destination="nOr-EI-Zrc" id="NXW-0A-0YU"/>
                 <outlet property="pushBtn" destination="tIW-Fd-3Yb" id="4XN-xO-NxT"/>
+                <outlet property="swiftBtn" destination="VVm-Js-x7P" id="tOe-bb-3ki"/>
                 <outlet property="view" destination="iN0-l3-epB" id="0gM-ai-3cf"/>
             </connections>
         </placeholder>
@@ -55,6 +56,13 @@
                         <action selector="loginAction:" destination="-1" eventType="touchUpInside" id="XTc-ti-oyo"/>
                     </connections>
                 </button>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="VVm-Js-x7P">
+                    <rect key="frame" x="181" y="619" width="52" height="30"/>
+                    <state key="normal" title="RxSwift"/>
+                    <connections>
+                        <action selector="rxSwiftAction:" destination="-1" eventType="touchUpInside" id="0g4-g5-CmS"/>
+                    </connections>
+                </button>
             </subviews>
             <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
             <constraints>
@@ -62,6 +70,7 @@
                 <constraint firstItem="vUN-kp-3ea" firstAttribute="leading" secondItem="tIW-Fd-3Yb" secondAttribute="leading" id="3rX-rg-epB"/>
                 <constraint firstItem="tIW-Fd-3Yb" firstAttribute="centerY" secondItem="nOr-EI-Zrc" secondAttribute="centerY" id="NIo-zw-M1M"/>
                 <constraint firstItem="nOr-EI-Zrc" firstAttribute="leading" secondItem="tIW-Fd-3Yb" secondAttribute="trailing" id="UUX-La-0HI"/>
+                <constraint firstItem="V5G-5W-PZq" firstAttribute="top" secondItem="VVm-Js-x7P" secondAttribute="bottom" constant="94" id="VSs-LI-mri"/>
                 <constraint firstItem="4Za-oC-HKx" firstAttribute="top" secondItem="nOr-EI-Zrc" secondAttribute="bottom" constant="50" id="Ymj-7X-Yds"/>
                 <constraint firstItem="tIW-Fd-3Yb" firstAttribute="width" secondItem="nOr-EI-Zrc" secondAttribute="width" id="bCd-Tq-skY"/>
                 <constraint firstItem="4Za-oC-HKx" firstAttribute="centerX" secondItem="nOr-EI-Zrc" secondAttribute="centerX" id="iDj-YQ-akf"/>
@@ -71,6 +80,7 @@
                 <constraint firstItem="GiB-Oy-m5b" firstAttribute="trailing" secondItem="vUN-kp-3ea" secondAttribute="trailing" id="uSF-B7-1nF"/>
                 <constraint firstItem="GiB-Oy-m5b" firstAttribute="centerY" secondItem="nOr-EI-Zrc" secondAttribute="centerY" id="vnN-FE-Wau"/>
                 <constraint firstItem="vUN-kp-3ea" firstAttribute="bottom" secondItem="V5G-5W-PZq" secondAttribute="bottom" constant="89" id="wPG-Md-eQk"/>
+                <constraint firstItem="VVm-Js-x7P" firstAttribute="centerX" secondItem="V5G-5W-PZq" secondAttribute="centerX" id="wlL-Qx-wv7"/>
                 <constraint firstItem="nOr-EI-Zrc" firstAttribute="width" secondItem="GiB-Oy-m5b" secondAttribute="width" id="zM7-5p-KCK"/>
             </constraints>
             <viewLayoutGuide key="safeArea" id="vUN-kp-3ea"/>

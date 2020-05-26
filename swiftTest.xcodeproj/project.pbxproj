@@ -16,8 +16,10 @@
 		0A400E3A24703DBD00A3F846 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0A400E3824703DBD00A3F846 /* LaunchScreen.storyboard */; };
 		0A400E4524703DBD00A3F846 /* swiftTestTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A400E4424703DBD00A3F846 /* swiftTestTests.swift */; };
 		0A400E5024703DBD00A3F846 /* swiftTestUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A400E4F24703DBD00A3F846 /* swiftTestUITests.swift */; };
-		0A579A4B24760D4000475FFE /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A579A4A24760D4000475FFE /* LoginViewController.swift */; };
-		0A87396C247689C600DD10CF /* ObjectUnicode.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A87396B247689C600DD10CF /* ObjectUnicode.swift */; };
+		0A73B691247B572200357388 /* RxSwiftViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A73B690247B572200357388 /* RxSwiftViewController.swift */; };
+		0A73B693247B574A00357388 /* RxSwiftViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 0A73B692247B574A00357388 /* RxSwiftViewController.xib */; };
+		0A73B696247B9D5300357388 /* TestViewcontroller.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A73B695247B9D5300357388 /* TestViewcontroller.swift */; };
+		0A92880624776C3C0008AFF1 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A92880524776C3C0008AFF1 /* LoginViewController.swift */; };
 		0ACEBE822470483000FAFD94 /* PushViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0ACEBE812470483000FAFD94 /* PushViewController.swift */; };
 		0ACEBE842470483E00FAFD94 /* PresentViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0ACEBE832470483E00FAFD94 /* PresentViewController.swift */; };
 		0ACEBE8624704C3500FAFD94 /* ViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 0ACEBE8524704C3500FAFD94 /* ViewController.xib */; };
@@ -56,9 +58,11 @@
 		0A400E4B24703DBD00A3F846 /* swiftTestUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = swiftTestUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		0A400E4F24703DBD00A3F846 /* swiftTestUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = swiftTestUITests.swift; sourceTree = "<group>"; };
 		0A400E5124703DBD00A3F846 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		0A579A4A24760D4000475FFE /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
 		0A579A4C24760D5800475FFE /* swiftTest-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "swiftTest-Bridging-Header.h"; sourceTree = "<group>"; };
-		0A87396B247689C600DD10CF /* ObjectUnicode.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ObjectUnicode.swift; sourceTree = "<group>"; };
+		0A73B690247B572200357388 /* RxSwiftViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RxSwiftViewController.swift; sourceTree = "<group>"; };
+		0A73B692247B574A00357388 /* RxSwiftViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = RxSwiftViewController.xib; sourceTree = "<group>"; };
+		0A73B695247B9D5300357388 /* TestViewcontroller.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TestViewcontroller.swift; sourceTree = "<group>"; };
+		0A92880524776C3C0008AFF1 /* LoginViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
 		0ACEBE812470483000FAFD94 /* PushViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PushViewController.swift; sourceTree = "<group>"; };
 		0ACEBE832470483E00FAFD94 /* PresentViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PresentViewController.swift; sourceTree = "<group>"; };
 		0ACEBE8524704C3500FAFD94 /* ViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ViewController.xib; sourceTree = "<group>"; };
@@ -123,11 +127,13 @@
 				0A400E2F24703DBC00A3F846 /* SceneDelegate.swift */,
 				0A400E3124703DBC00A3F846 /* ViewController.swift */,
 				0ACEBE8524704C3500FAFD94 /* ViewController.xib */,
+				0A73B695247B9D5300357388 /* TestViewcontroller.swift */,
 				0ACEBE812470483000FAFD94 /* PushViewController.swift */,
 				0ACEBE832470483E00FAFD94 /* PresentViewController.swift */,
 				0ACEBE872470705D00FAFD94 /* ChangeProtocol.swift */,
-				0A579A4A24760D4000475FFE /* LoginViewController.swift */,
-				0A87396B247689C600DD10CF /* ObjectUnicode.swift */,
+				0A92880524776C3C0008AFF1 /* LoginViewController.swift */,
+				0A73B690247B572200357388 /* RxSwiftViewController.swift */,
+				0A73B692247B574A00357388 /* RxSwiftViewController.xib */,
 				0A400E3324703DBC00A3F846 /* Main.storyboard */,
 				0A400E3624703DBD00A3F846 /* Assets.xcassets */,
 				0A400E3824703DBD00A3F846 /* LaunchScreen.storyboard */,
@@ -281,6 +287,7 @@
 			files = (
 				0A400E3A24703DBD00A3F846 /* LaunchScreen.storyboard in Resources */,
 				0A400E3724703DBD00A3F846 /* Assets.xcassets in Resources */,
+				0A73B693247B574A00357388 /* RxSwiftViewController.xib in Resources */,
 				0ACEBE8624704C3500FAFD94 /* ViewController.xib in Resources */,
 				0A400E3524703DBC00A3F846 /* Main.storyboard in Resources */,
 			);
@@ -349,11 +356,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				0A579A4B24760D4000475FFE /* LoginViewController.swift in Sources */,
 				0A400E3224703DBC00A3F846 /* ViewController.swift in Sources */,
 				0A400E2E24703DBC00A3F846 /* AppDelegate.swift in Sources */,
 				0ACEBE842470483E00FAFD94 /* PresentViewController.swift in Sources */,
-				0A87396C247689C600DD10CF /* ObjectUnicode.swift in Sources */,
+				0A73B696247B9D5300357388 /* TestViewcontroller.swift in Sources */,
+				0A92880624776C3C0008AFF1 /* LoginViewController.swift in Sources */,
+				0A73B691247B572200357388 /* RxSwiftViewController.swift in Sources */,
 				0ACEBE822470483000FAFD94 /* PushViewController.swift in Sources */,
 				0A400E3024703DBC00A3F846 /* SceneDelegate.swift in Sources */,
 				0ACEBE882470705D00FAFD94 /* ChangeProtocol.swift in Sources */,

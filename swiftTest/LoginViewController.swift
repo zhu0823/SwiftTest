@@ -71,14 +71,16 @@ extension LoginViewController {
 
     func getNewsData() {
         
-        request("https://tianqiapi.com/api", method: .get, parameters: ["appid": "29787174", "appsecret": "nkAVU7de"], encoding: URLEncoding.default, headers: nil).response { (response) in
+        let apiDay = "https://tianqiapi.com/free/day"
+        let _ = "https://tianqiapi.com/free/week"
+        
+        request(apiDay, method: .get, parameters: ["appid": "29787174", "appsecret": "nkAVU7de"], encoding: URLEncoding.default, headers: nil).response { (response) in
             
             do {
                 let respJson = try JSONSerialization.jsonObject(with: response.data!, options: .mutableContainers)
                 
-                let respDic = respJson as! Dictionary<String, Any>
-                
-                print(respDic.unicodeDescription)
+                print(respJson as! Dictionary<String, Any>)
+            
             }catch {
                 print(error)
             }

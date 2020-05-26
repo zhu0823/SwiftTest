@@ -14,6 +14,7 @@ class ViewController: UIViewController {
     @IBOutlet weak var presentBtn: UIButton!
     @IBOutlet weak var clickBtn: UIButton!
     @IBOutlet weak var countLabel: UILabel!
+    @IBOutlet weak var swiftBtn: UIButton!
     
     var count: Int = 0 {
         willSet {
@@ -29,14 +30,21 @@ class ViewController: UIViewController {
         
         count = 0
         
-        let com = add(5) >>> mut(10) >>> div(3) >>> sub(2)
+//        let com = add(5) >>> mut(10) >>> div(3) >>> sub(2)
         
-        print(com(12))
+//        print(com(12))
+//
+//        print(add2(10)(20)(30))
         
-        print(add2(10)(20)(30))
+        testViewModel()
         
+        testCreateRX()
     }
 
+    @IBAction func rxSwiftAction(_ sender: Any) {
+        navigationController?.pushViewController(RxSwiftViewController.init(), animated: true)
+    }
+    
     @IBAction func loginAction(_ sender: Any) {
         navigationController?.pushViewController(LoginViewController(), animated: true)
     }
