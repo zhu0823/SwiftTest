@@ -1,3 +1,3 @@
 # SwiftTest
 
-This Project only for Test Code.
+This project only for test code.
