@@ -1,5 +1,6 @@
 PODS:
   - Alamofire (4.9.1)
+  - HandyJSON (5.0.2)
   - Kingfisher (4.10.1)
   - RxCocoa (5.1.1):
     - RxRelay (~> 5)
@@ -9,34 +10,41 @@ PODS:
   - RxSwift (5.1.1)
   - SnapKit (4.2.0)
   - SwiftyJSON (5.0.0)
+  - Then (2.7.0)
 
 DEPENDENCIES:
   - Alamofire
+  - HandyJSON
   - Kingfisher
   - RxCocoa
   - RxSwift
   - SnapKit
   - SwiftyJSON
+  - Then
 
 SPEC REPOS:
   https://github.com/CocoaPods/Specs.git:
     - Alamofire
+    - HandyJSON
     - Kingfisher
     - RxCocoa
     - RxRelay
     - RxSwift
     - SnapKit
     - SwiftyJSON
+    - Then
 
 SPEC CHECKSUMS:
   Alamofire: 85e8a02c69d6020a0d734f6054870d7ecb75cf18
+  HandyJSON: 9e4e236f5d2dbefad5155a77417bbea438201c03
   Kingfisher: c148cd7b47ebde9989f6bc7c27dcaa79d81279a0
   RxCocoa: 32065309a38d29b5b0db858819b5bf9ef038b601
   RxRelay: d77f7d771495f43c556cbc43eebd1bb54d01e8e9
   RxSwift: 81470a2074fa8780320ea5fe4102807cb7118178
   SnapKit: fe8a619752f3f27075cc9a90244d75c6c3f27e2a
   SwiftyJSON: 36413e04c44ee145039d332b4f4e2d3e8d6c4db7
+  Then: acfe0be7e98221c6204e12f8161459606d5d822d
 
-PODFILE CHECKSUM: f8a2f54b9a16b6e6992dded45fccf539c5b7e9cc
+PODFILE CHECKSUM: c2cca1b1dcab0dd50f6deddc927ebebe89babc8a
 
-COCOAPODS: 1.9.1
+COCOAPODS: 1.10.1

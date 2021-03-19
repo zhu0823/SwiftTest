@@ -8,6 +8,7 @@
 
 import RxSwift
 import Alamofire
+import HandyJSON
 
 class LoginViewController: UIViewController {
     
@@ -15,6 +16,13 @@ class LoginViewController: UIViewController {
     
     let dataArr = ["djakj", "dsadq", "asdad"]
     
+    let block: (UIView?) -> Bool = { view in
+        guard let v = view else {
+            return false
+        }
+        print(view!)
+        return true
+    }
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -25,7 +33,7 @@ class LoginViewController: UIViewController {
         tableView.dataSource = self
         view.addSubview(tableView)
         
-        getNewsData()
+        getNewsData(model: WeatherModel())
         
     }
     
@@ -69,7 +77,7 @@ extension LoginViewController: UITableViewDelegate {
 
 extension LoginViewController {
 
-    func getNewsData() {
+    func getNewsData<T: HandyJSON>(model: T) {
         
         let apiDay = "https://tianqiapi.com/free/day"
         let _ = "https://tianqiapi.com/free/week"
@@ -77,13 +85,49 @@ extension LoginViewController {
         request(apiDay, method: .get, parameters: ["appid": "29787174", "appsecret": "nkAVU7de"], encoding: URLEncoding.default, headers: nil).response { (response) in
             
             do {
-                let respJson = try JSONSerialization.jsonObject(with: response.data!, options: .mutableContainers)
+                let respJson = try JSONSerialization.jsonObject(with: response.data!, options: .mutableContainers) as! Dictionary<String, Any>
                 
-                print(respJson as! Dictionary<String, Any>)
-            
+                print(respJson)
+                
+                let model = T.deserialize(from: respJson)
+
+                print(model, self.block(self.view))
+                 
             }catch {
+                
                 print(error)
             }
         }
     }
 }
+
+///
+class WeatherModel: HandyJSON {
+    
+    var win_meter: String?
+    
+    var update_time: String?
+    
+    var wea_img: String?
+    
+    var tem: String?
+    
+    var cityid: String?
+    
+    var tem_night: String?
+    
+    var air: String?
+    
+    var win: String?
+    
+    var tem_day: String?
+    
+    var win_speed: String?
+    
+    var city: String?
+    
+    var wea: String?
+    
+    required init() {}
+}
+

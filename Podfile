@@ -16,7 +16,9 @@ target 'swiftTest' do
   pod 'SwiftyJSON'
   pod 'Alamofire'
   pod 'Kingfisher'
-
+  pod 'HandyJSON'
+  pod 'Then'
+  
 =begin
   target 'swiftTestTests' do
     inherit! :search_paths

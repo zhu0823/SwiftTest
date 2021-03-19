@@ -144,16 +144,26 @@ class RxSwiftViewController: UIViewController {
             observer.onNext(3)
             observer.onCompleted()
             
-            return Disposables.create()
             return Disposables.create {
                 
             }
         }
         numbers.subscribe().disposed(by: disPool)
         
-        
-        
         textRxSwift()
+        
+        let ob1 = Observable<Int>.of(1, 2, 3)
+        ob1.subscribe { (event) in
+            print(event)
+        } onError: { (error) in
+            print(error)
+        } onCompleted: {
+            print("Completed")
+        } onDisposed: {
+            print("Disposed")
+        }.disposed(by: disPool)
+
+        
         
     }
     
@@ -270,8 +280,7 @@ extension RxSwiftViewController {
             
             let url = URL(string: "https://api.github.com/repos/\(repo)")!
             
-            let task = URLSession.shared.dataTask(with: url) {
-                (data, _, error) in
+            let task = URLSession.shared.dataTask(with: url) { (data, _, error) in
                 
                 if let error = error {
                     single(.error(error))
