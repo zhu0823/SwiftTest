@@ -56,6 +56,7 @@ extension ViewController {
         
         
         
+        
         print("end")
     }
     
@@ -79,8 +80,8 @@ extension ViewController {
             return Disposables.create()
         }.subscribe(onNext: { event in
             print("onNext")
-        }, onError: { event in
-            print("onError")
+        }, onError: { error in
+            print(error)
         }, onCompleted: {
             print("onCompleted")
         }, onDisposed: {

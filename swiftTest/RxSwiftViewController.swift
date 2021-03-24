@@ -153,7 +153,9 @@ class RxSwiftViewController: UIViewController {
         textRxSwift()
         
         let ob1 = Observable<Int>.of(1, 2, 3)
-        ob1.subscribe { (event) in
+        ob1.filter { (num) -> Bool in
+            num >= 2
+        }.subscribe { (event) in
             print(event)
         } onError: { (error) in
             print(error)
@@ -165,6 +167,19 @@ class RxSwiftViewController: UIViewController {
 
         
         
+        let observer: AnyObserver<Data> = AnyObserver { (event) in
+            
+            switch event {
+            case .next(let data):
+                print(data)
+            case .error(let error):
+                print(error)
+            case .completed:
+                print("Completed")
+            }
+        }
+        
+        URLSession.shared.rx.data(request: URLRequest(url: URL(string: "https://www.baidu.com")!)).subscribe(observer).disposed(by: disPool)
     }
     
     

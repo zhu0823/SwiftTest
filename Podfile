@@ -18,6 +18,7 @@ target 'swiftTest' do
   pod 'Kingfisher'
   pod 'HandyJSON'
   pod 'Then'
+  pod 'R.swift'
   
 =begin
   target 'swiftTestTests' do
