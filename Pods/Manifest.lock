@@ -2,6 +2,8 @@ PODS:
   - Alamofire (4.9.1)
   - HandyJSON (5.0.2)
   - Kingfisher (4.10.1)
+  - "NSObject+Rx (5.1.0)":
+    - RxSwift (~> 5.1)
   - R.swift (5.4.0):
     - R.swift.Library (~> 5.3.0)
   - R.swift.Library (5.3.0)
@@ -19,6 +21,7 @@ DEPENDENCIES:
   - Alamofire
   - HandyJSON
   - Kingfisher
+  - "NSObject+Rx"
   - R.swift
   - RxCocoa
   - RxSwift
@@ -31,6 +34,7 @@ SPEC REPOS:
     - Alamofire
     - HandyJSON
     - Kingfisher
+    - "NSObject+Rx"
     - R.swift
     - R.swift.Library
     - RxCocoa
@@ -44,6 +48,7 @@ SPEC CHECKSUMS:
   Alamofire: 85e8a02c69d6020a0d734f6054870d7ecb75cf18
   HandyJSON: 9e4e236f5d2dbefad5155a77417bbea438201c03
   Kingfisher: c148cd7b47ebde9989f6bc7c27dcaa79d81279a0
+  "NSObject+Rx": fa6bbcc1ab1faa06b01466bc09b1e0692bbc5946
   R.swift: c533450b0f7dc494e0993f5f1a1db925d84c3006
   R.swift.Library: 0fc583cb55a99e28901299cc451614cad1161962
   RxCocoa: 32065309a38d29b5b0db858819b5bf9ef038b601
@@ -53,6 +58,6 @@ SPEC CHECKSUMS:
   SwiftyJSON: 36413e04c44ee145039d332b4f4e2d3e8d6c4db7
   Then: acfe0be7e98221c6204e12f8161459606d5d822d
 
-PODFILE CHECKSUM: 284e9e4f112ac8c4baa0fc865c195435b1ff2639
+PODFILE CHECKSUM: 164b3fdd2ea574517aa03b8fe0a5d5f647f2424f
 
 COCOAPODS: 1.10.1

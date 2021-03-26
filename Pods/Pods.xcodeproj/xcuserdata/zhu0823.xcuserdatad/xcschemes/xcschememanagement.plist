@@ -19,6 +19,11 @@
 			<key>isShown</key>
 			<false/>
 		</dict>
+		<key>NSObject+Rx.xcscheme</key>
+		<dict>
+			<key>isShown</key>
+			<false/>
+		</dict>
 		<key>Pods-swiftTest.xcscheme</key>
 		<dict>
 			<key>isShown</key>

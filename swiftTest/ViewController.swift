@@ -36,7 +36,7 @@ extension TableViewSelectedType: TableViewSelectedProrocol {
         case .login:
             return LoginViewController()
         case .imagePicker:
-            return ImagePickerViewController()
+            return ImagePickerController()
         }
     }
 }
@@ -52,7 +52,7 @@ struct DataList {
         DataModel(name: "PresentViewController", vc: TableViewSelectedType.present.controller),
         DataModel(name: "RxSwiftViewController", vc: TableViewSelectedType.rxSwift.controller),
         DataModel(name: "LoginViewController", vc: TableViewSelectedType.login.controller),
-        DataModel(name: "ImagePickerViewController", vc: TableViewSelectedType.imagePicker.controller),
+        DataModel(name: "ImagePickerController", vc: TableViewSelectedType.imagePicker.controller),
     ])
 }
 

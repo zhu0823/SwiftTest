@@ -19,6 +19,7 @@ target 'swiftTest' do
   pod 'HandyJSON'
   pod 'Then'
   pod 'R.swift'
+  pod 'NSObject+Rx'
   
 =begin
   target 'swiftTestTests' do

@@ -13,5 +13,4 @@ class ImagePickerView: UIView {
     @IBOutlet weak var imageBtn: UIButton!
     @IBOutlet weak var videoBtn: UIButton!
     @IBOutlet weak var transformBtn: UIButton!
-    
 }

@@ -20,12 +20,15 @@
 		0A73B693247B574A00357388 /* RxSwiftViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 0A73B692247B574A00357388 /* RxSwiftViewController.xib */; };
 		0A73B696247B9D5300357388 /* TestViewcontroller.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A73B695247B9D5300357388 /* TestViewcontroller.swift */; };
 		0A7F005B260451E6007D7BD3 /* SimpleViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A7F005A260451E6007D7BD3 /* SimpleViewModel.swift */; };
-		0A87EA9A260B3E5F00CDE314 /* ImagePickerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A87EA99260B3E5F00CDE314 /* ImagePickerViewController.swift */; };
+		0A87EA9A260B3E5F00CDE314 /* ImagePickerController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A87EA99260B3E5F00CDE314 /* ImagePickerController.swift */; };
 		0A87EA9F260B41E400CDE314 /* ImagePickerViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A87EA9E260B41E400CDE314 /* ImagePickerViewModel.swift */; };
 		0A87EAA4260B4A6100CDE314 /* ImagePickerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A87EAA3260B4A6100CDE314 /* ImagePickerView.swift */; };
 		0A87EAA9260B4A9900CDE314 /* ImagePickerView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 0A87EAA8260B4A9900CDE314 /* ImagePickerView.xib */; };
 		0A87EADE260B527D00CDE314 /* R.generated.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A87EADD260B527D00CDE314 /* R.generated.swift */; };
 		0A92880624776C3C0008AFF1 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A92880524776C3C0008AFF1 /* LoginViewController.swift */; };
+		0A93DE6E260C374500F7C28F /* BaseViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A93DE6D260C374500F7C28F /* BaseViewController.swift */; };
+		0A93DE76260C39AA00F7C28F /* ViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A93DE75260C39AA00F7C28F /* ViewModel.swift */; };
+		0A93DE8C260C732B00F7C28F /* StringExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A93DE8B260C732B00F7C28F /* StringExtension.swift */; };
 		0A97D3D42603526400D978EC /* RepoModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A97D3D32603526400D978EC /* RepoModel.swift */; };
 		0ACEBE822470483000FAFD94 /* PushViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0ACEBE812470483000FAFD94 /* PushViewController.swift */; };
 		0ACEBE842470483E00FAFD94 /* PresentViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0ACEBE832470483E00FAFD94 /* PresentViewController.swift */; };
@@ -70,12 +73,15 @@
 		0A73B692247B574A00357388 /* RxSwiftViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = RxSwiftViewController.xib; sourceTree = "<group>"; };
 		0A73B695247B9D5300357388 /* TestViewcontroller.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TestViewcontroller.swift; sourceTree = "<group>"; };
 		0A7F005A260451E6007D7BD3 /* SimpleViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = SimpleViewModel.swift; path = ../../../Downloads/SimpleViewModel.swift; sourceTree = "<group>"; };
-		0A87EA99260B3E5F00CDE314 /* ImagePickerViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImagePickerViewController.swift; sourceTree = "<group>"; };
+		0A87EA99260B3E5F00CDE314 /* ImagePickerController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImagePickerController.swift; sourceTree = "<group>"; };
 		0A87EA9E260B41E400CDE314 /* ImagePickerViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImagePickerViewModel.swift; sourceTree = "<group>"; };
 		0A87EAA3260B4A6100CDE314 /* ImagePickerView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImagePickerView.swift; sourceTree = "<group>"; };
 		0A87EAA8260B4A9900CDE314 /* ImagePickerView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ImagePickerView.xib; sourceTree = "<group>"; };
 		0A87EADD260B527D00CDE314 /* R.generated.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = R.generated.swift; sourceTree = "<group>"; };
 		0A92880524776C3C0008AFF1 /* LoginViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
+		0A93DE6D260C374500F7C28F /* BaseViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseViewController.swift; sourceTree = "<group>"; };
+		0A93DE75260C39AA00F7C28F /* ViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewModel.swift; sourceTree = "<group>"; };
+		0A93DE8B260C732B00F7C28F /* StringExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StringExtension.swift; sourceTree = "<group>"; };
 		0A97D3D32603526400D978EC /* RepoModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RepoModel.swift; sourceTree = "<group>"; };
 		0ACEBE812470483000FAFD94 /* PushViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PushViewController.swift; sourceTree = "<group>"; };
 		0ACEBE832470483E00FAFD94 /* PresentViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PresentViewController.swift; sourceTree = "<group>"; };
@@ -137,6 +143,8 @@
 		0A400E2C24703DBC00A3F846 /* swiftTest */ = {
 			isa = PBXGroup;
 			children = (
+				0A93DE8A260C731600F7C28F /* Extension */,
+				0A93DE6C260C373200F7C28F /* Base */,
 				0A400E2D24703DBC00A3F846 /* AppDelegate.swift */,
 				0A400E2F24703DBC00A3F846 /* SceneDelegate.swift */,
 				0A400E3124703DBC00A3F846 /* ViewController.swift */,
@@ -182,10 +190,10 @@
 		0A87EA98260B3E3700CDE314 /* ImagePicker */ = {
 			isa = PBXGroup;
 			children = (
-				0A87EA99260B3E5F00CDE314 /* ImagePickerViewController.swift */,
-				0A87EA9E260B41E400CDE314 /* ImagePickerViewModel.swift */,
 				0A87EAA3260B4A6100CDE314 /* ImagePickerView.swift */,
 				0A87EAA8260B4A9900CDE314 /* ImagePickerView.xib */,
+				0A87EA9E260B41E400CDE314 /* ImagePickerViewModel.swift */,
+				0A87EA99260B3E5F00CDE314 /* ImagePickerController.swift */,
 			);
 			path = ImagePicker;
 			sourceTree = "<group>";
@@ -196,6 +204,23 @@
 				0A87EADD260B527D00CDE314 /* R.generated.swift */,
 			);
 			path = Resources;
+			sourceTree = "<group>";
+		};
+		0A93DE6C260C373200F7C28F /* Base */ = {
+			isa = PBXGroup;
+			children = (
+				0A93DE6D260C374500F7C28F /* BaseViewController.swift */,
+				0A93DE75260C39AA00F7C28F /* ViewModel.swift */,
+			);
+			path = Base;
+			sourceTree = "<group>";
+		};
+		0A93DE8A260C731600F7C28F /* Extension */ = {
+			isa = PBXGroup;
+			children = (
+				0A93DE8B260C732B00F7C28F /* StringExtension.swift */,
+			);
+			path = Extension;
 			sourceTree = "<group>";
 		};
 		93A6C71DFF484B4EA539164A /* Pods */ = {
@@ -421,13 +446,16 @@
 				0ACEBE842470483E00FAFD94 /* PresentViewController.swift in Sources */,
 				0A97D3D42603526400D978EC /* RepoModel.swift in Sources */,
 				0A87EAA4260B4A6100CDE314 /* ImagePickerView.swift in Sources */,
+				0A93DE76260C39AA00F7C28F /* ViewModel.swift in Sources */,
 				0A73B696247B9D5300357388 /* TestViewcontroller.swift in Sources */,
 				0A92880624776C3C0008AFF1 /* LoginViewController.swift in Sources */,
-				0A87EA9A260B3E5F00CDE314 /* ImagePickerViewController.swift in Sources */,
+				0A87EA9A260B3E5F00CDE314 /* ImagePickerController.swift in Sources */,
 				0A73B691247B572200357388 /* RxSwiftViewController.swift in Sources */,
 				0A7F005B260451E6007D7BD3 /* SimpleViewModel.swift in Sources */,
 				0A87EA9F260B41E400CDE314 /* ImagePickerViewModel.swift in Sources */,
 				0ACEBE822470483000FAFD94 /* PushViewController.swift in Sources */,
+				0A93DE8C260C732B00F7C28F /* StringExtension.swift in Sources */,
+				0A93DE6E260C374500F7C28F /* BaseViewController.swift in Sources */,
 				0A400E3024703DBC00A3F846 /* SceneDelegate.swift in Sources */,
 				0ACEBE882470705D00FAFD94 /* ChangeProtocol.swift in Sources */,
 			);
