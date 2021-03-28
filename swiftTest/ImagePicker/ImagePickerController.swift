@@ -87,30 +87,53 @@ class ImagePickerController: BaseViewController<ImagePickerViewModel> {
             (self.selectImage != nil) && (self.selectVideoURL != nil)
         }.subscribe { (event) in
 
-            let imageURL = self.saveToDocument(self.selectVideoURL!)
-            let videoURL = self.saveToDocument(self.selectImageURL!)
+            print(PHPhotoLibrary.authorizationStatus().rawValue)
+                  
             
-            PHLivePhoto.request(withResourceFileURLs: [imageURL, videoURL],
-                                placeholderImage: self.selectImage,
-                                targetSize: CGSize.zero,
-                                contentMode: .aspectFill) { (livePhoto, info) in
+            let imageURL = self.saveToDocument(self.selectImageURL!)
+            let videoURL = self.saveToDocument(self.selectVideoURL!)
+            
+            print(imageURL.0, videoURL.0)
+            
+            PHPhotoLibrary.shared().performChanges {
                 
-                PHPhotoLibrary.shared().performChanges {
-                    
-                    let request = PHAssetCreationRequest.forAsset()
-                    let options = PHAssetResourceCreationOptions.init()
-                    request.addResource(with: .pairedVideo, data: imageURL, options: options)
-                    request.addResource(with: .photo, data: URL.init(fileURLWithPath: self.selectImage), options: options)
-                } completionHandler: { (result, error) in
-                    if result {
-                        print("Save Success")
-                    }else {
-                        print("Save Error:\(error)")
-                    }
+                let request = PHAssetCreationRequest.forAsset()
+                let options = PHAssetResourceCreationOptions.init()
+//                request.addResource(with: .photo, data: imageURL.1, options: options)
+//                request.addResource(with: .pairedVideo, data: videoURL.1, options: options)
+                request.addResource(with: .photo, fileURL: imageURL.0, options: options)
+                request.addResource(with: .pairedVideo, fileURL: videoURL.0, options: options)
+            } completionHandler: { (result, error) in
+                if result {
+                    print("Save Success")
+                }else {
+                    print("Save Error:\(error)")
                 }
-
-                
             }
+            
+            UIImageWriteToSavedPhotosAlbum(UIImage(data: imageURL.1)!, self, #selector(self.saveImage(image:didFinishSavingWithError:contextInfo:)), nil)
+            
+//            PHLivePhoto.request(withResourceFileURLs: [imageURL.0, videoURL.0],
+//                                placeholderImage: self.selectImage,
+//                                targetSize: CGSize.zero,
+//                                contentMode: .aspectFill) { (livePhoto, info) in
+//
+//                PHPhotoLibrary.shared().performChanges {
+//
+//                    let request = PHAssetCreationRequest.forAsset()
+//                    let options = PHAssetResourceCreationOptions.init()
+//                    request.addResource(with: .photo, data: imageURL.1, options: options)
+//                    request.addResource(with: .pairedVideo, data: videoURL.1, options: options)
+//                } completionHandler: { (result, error) in
+//                    if result {
+//                        print("Save Success")
+//                    }else {
+//                        print("Save Error:\(error)")
+//                    }
+//                }
+//
+//
+//            }
         }.disposed(by: rx.disposeBag)
         
 //        let imageObservable = Observable<UIImage>.create { [weak self] (observer) -> Disposable in
@@ -128,17 +151,30 @@ class ImagePickerController: BaseViewController<ImagePickerViewModel> {
         
         var path = NSSearchPathForDirectoriesInDomains(.documentDirectory, .userDomainMask, true)[0] as String
         
-        if filePath.absoluteString?.hasSuffix("mov") == true {
+        if filePath.absoluteString?.hasSuffix("MOV") == true {
             
-            path = path + "/1.mov"
+            path = path + "/1.MOV"
         }else if filePath.absoluteString?.hasSuffix("jpeg") == true {
             
             path = path + "/1.jpeg"
         }
         
         fileManager.createFile(atPath: path, contents: data, attributes: nil)
-        
-        return (URL.init(string: path)!, data)
+                
+        return (URL.init(fileURLWithPath: path), data)
+    }
+    
+    @objc func saveImage(image: UIImage, didFinishSavingWithError error: NSError?, contextInfo: AnyObject) {
+        if error != nil{
+                    
+            print("保存失败")
+            
+        }else{
+            
+            print("保存成功")
+            
+        }
+
     }
     
     
